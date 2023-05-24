@@ -28,7 +28,7 @@ th {
 [class*="activity__name"] {
   margin: 0 0 0.5rem;
 }
-.sample-activity__tags, .activity__tags {
+[class*="activity__tags"] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
