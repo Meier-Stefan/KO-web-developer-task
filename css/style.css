@@ -1,1 +1,73 @@
+body {
+    margin: 0 18px;
+}
 
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #464E52;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h3 a {
+    color: #005AD2;
+    text-decoration: underline;
+}
+
+[class*="container"] {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.sample-activity,
+.task-activity {
+    height: 104px;
+
+    background: #fff;
+    padding: 24px;
+    border: 1px solid #E6E9EC;
+    filter: drop-shadow(0 2px 16px rgba(0, 0, 0, .1));
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+[class*="tag--"] {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #8B9296;
+
+    border: 1px solid #CDD7DC;
+    border-radius: 12px;
+
+    /* to be verified by ux from here*/
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    line-height: 16px;
+    /* to here */
+}
+
+@media only screen and (max-width: 64em) {
+    h2 {
+        font-size: 20px;
+    }
+
+    [class*="tag--"] {
+        font-size: 12px;
+    }
+}
